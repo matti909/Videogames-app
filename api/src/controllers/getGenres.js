@@ -1,5 +1,6 @@
-const { Genre } = require("../db.js");
 const axios = require("axios");
+const { Genre } = require("../db.js");
+require("dotenv").config();
 const { API_KEY } = process.env;
 
 const getApiInfoGenres = async function () {
