@@ -1,8 +1,8 @@
-const { Genre } = require('../db.js');
-const axios = require ('axios');
-const { API_KEY } = process.env
+const { Genre } = require("../db.js");
+const axios = require("axios");
+const { API_KEY } = process.env;
 
-const getApiInfoGenres = async function() {
+const getApiInfoGenres = async function () {
   let gamesData = [];
 
   const urlData = await axios.get(
@@ -23,5 +23,5 @@ const getApiInfoGenres = async function() {
       },
     });
   });
-}
-module.exports = getApiInfoGenres
+};
+module.exports = getApiInfoGenres;

@@ -13,7 +13,7 @@ export const LandingPage = () => {
           </Ingresar>
         </Conteiner>
         <ConteinerImg>
-          <Img src={img} width={150} height={150} alt="nohay" />
+          <Img src={img} alt="nohay" />
         </ConteinerImg>
       </Conteiner>
     </Wrapper>
