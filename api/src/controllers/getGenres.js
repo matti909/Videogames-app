@@ -3,7 +3,7 @@ const { Genre } = require("../db.js");
 require("dotenv").config();
 const { API_KEY } = process.env;
 
-const getApiInfoGenres = async function () {
+const getGenres = async function () {
   let gamesData = [];
 
   const urlData = await axios.get(
@@ -25,4 +25,4 @@ const getApiInfoGenres = async function () {
     });
   });
 };
-module.exports = getApiInfoGenres;
+module.exports = getGenres;
