@@ -1,6 +1,6 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
-const getApiInfoGenres = require('./src/controllers/getGenres.js');
+const getApiInfoGenres = require('../app/src/controllers/getGenres.js');
 
 require('dotenv').config();
 const {PORT} = process.env;
