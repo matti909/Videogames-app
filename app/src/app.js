@@ -8,7 +8,9 @@ require("./db.js");
 
 const server = express();
 
-server.name = "API";
+server.keepAliveTimeout = 61 * 1000;
+server.name = 'API';
+
 
 server.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 server.use(bodyParser.json({ limit: "50mb" }));
