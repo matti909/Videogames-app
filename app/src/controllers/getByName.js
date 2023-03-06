@@ -1,6 +1,6 @@
 const { Genre } = require('../db.js');
 const axios = require ('axios');
-const { API_KEY, DOGS_API_KEY } = process.env
+const { API_URL, DOGS_API_KEY } = process.env
 
 const getApiInfoByName = async function (name) {
   let gamesData = [];
