@@ -8,7 +8,7 @@ const getVideogames = async function() {
 
   for (let i = 1; i < 6; i++) {
     gamesData.push(
-      axios.get(`${API_URL}games?key=${API_KEY}&page=${i}`)
+      axios.get(`${API_URL}games?key=${DOGS_API_KEY}&page=${i}`)
     );
   }
 

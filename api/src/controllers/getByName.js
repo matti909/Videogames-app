@@ -6,7 +6,7 @@ const getApiInfoByName = async function (name) {
   let gamesData = [];
 
   const urlData = await axios.get(
-    `${API_URL}games?search=${name}&key=${API_KEY}`
+    `${API_URL}games?search=${name}&key=${DOGS_API_KEY}`
   );
   urlData.data.results.forEach((v) => {
     if (gamesData.length < 15) {

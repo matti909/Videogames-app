@@ -7,7 +7,7 @@ const getGenres = async function () {
   let gamesData = [];
 
   const urlData = await axios.get(
-    `${API_URL}genres?key=${API_KEY}`
+    `${API_URL}genres?key=${DOGS_API_KEY}`
   );
   urlData.data.results.forEach((v) => {
     gamesData.push({

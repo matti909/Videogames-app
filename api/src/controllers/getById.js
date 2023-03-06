@@ -5,7 +5,7 @@ const { API_KEY, API_URL } = process.env;
 const getApiInfoById = async function (id) {
   try {
     const res = await axios.get(
-      `${API_URL}games/${id}?key=${API_KEY}`
+      `${API_URL}games/${id}?key=${DOGS_API_KEY}`
     );
     const gamesData = {
       id: res.data.id,
