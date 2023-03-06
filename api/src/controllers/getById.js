@@ -1,11 +1,11 @@
 const { Genre } = require("../db.js");
 const axios = require("axios");
-const { API_KEY } = process.env;
+const { API_KEY, API_URL } = process.env;
 
 const getApiInfoById = async function (id) {
   try {
     const res = await axios.get(
-      `https://api.rawg.io/api/games/${id}?key=${API_KEY}`
+      `${API_URL}games/${id}?key=${API_KEY}`
     );
     const gamesData = {
       id: res.data.id,
