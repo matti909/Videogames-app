@@ -1,6 +1,6 @@
 const { Genre } = require("../db.js");
 const axios = require("axios");
-const { API_KEY, API_URL } = process.env;
+const { DOGS_API_KEY, API_URL } = process.env;
 
 const getApiInfoById = async function (id) {
   try {
