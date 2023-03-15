@@ -5,7 +5,7 @@ const { DOGS_API_KEY, API_URL } = process.env;
 const getApiInfoById = async function (id) {
   try {
     const res = await axios.get(
-      `${API_URL}games/${id}?key=${DOGS_API_KEY}`
+      `https://api.rawg.io/api/games/${id}?key=${DOGS_API_KEY}`
     );
     const gamesData = {
       id: res.data.id,
