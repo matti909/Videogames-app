@@ -8,26 +8,14 @@ import store from "./redux/store.js";
 import { PaginationContextProvider } from "./context/paginationContext";
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <PaginationContextProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </PaginationContextProvider>
-    </Provider>
-  </React.StrictMode>
-);
-/* const rootElement = document.getElementById("root");
+const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}>
-  <PaginationContextProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </PaginationContextProvider>
-</Provider>,
+    <PaginationContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </PaginationContextProvider>
+  </Provider>,
   rootElement
-); */
+);
