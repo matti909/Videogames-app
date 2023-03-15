@@ -7,7 +7,7 @@ import {Form} from "../src/pages/Form"
 import {Search} from "../src/pages/Search"
 import axios from "axios";
 
-axios.defaults.baseURL = 'http://videogames-app-production-9403.up.railway.app'
+axios.defaults.baseURL = 'https://videogames-app-production-9403.up.railway.app'
 
 const App = () =>  {
   return (
